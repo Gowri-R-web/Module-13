@@ -34,6 +34,7 @@ To write a Python program to evaluate a user-given Postfix expression that conta
 ```
 # 212223060073
 # Gowri Sankari R
+
 OPERATORS=set(['*','+']) 
 def evaluate_postfix(expression):
     stack=[] 
@@ -58,4 +59,5 @@ print('Evaluation result: ',evaluate_postfix(expression))
 <img width="1179" height="210" alt="13C" src="https://github.com/user-attachments/assets/bd0720de-d672-4e47-8a72-0a20ef9ef382" />
 
 ### RESULT
+
 The program evaluates the given postfix expression using stack operations and displays the final result.
