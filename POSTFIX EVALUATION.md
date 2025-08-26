@@ -32,12 +32,32 @@ To write a Python program to evaluate a user-given Postfix expression that conta
 ### PROGRAM
 
 ```
-
-
+# 212223060073
+# Gowri Sankari R
+OPERATORS=set(['*','+']) 
+def evaluate_postfix(expression):
+    stack=[] 
+    for i in expression:
+        if i not in OPERATORS:
+            stack.append(i)  
+        else:
+            a=stack.pop()  
+            b=stack.pop()
+            if i=='+':
+                res=int(b)+int(a)  
+            elif i=='*':
+                res=int(b)*int(a)
+            stack.append(res) 
+    return stack[0]
+expression = input()
+print('postfix expression: ',expression)
+print('Evaluation result: ',evaluate_postfix(expression))
 ```
 
 ### OUTPUT
+<img width="1179" height="210" alt="13C" src="https://github.com/user-attachments/assets/bd0720de-d672-4e47-8a72-0a20ef9ef382" />
 
-
+### RESULT
+The program evaluates the given postfix expression using stack operations and displays the final result.
 ### RESULT
 
