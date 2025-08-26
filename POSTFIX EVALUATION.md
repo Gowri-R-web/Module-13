@@ -59,5 +59,3 @@ print('Evaluation result: ',evaluate_postfix(expression))
 
 ### RESULT
 The program evaluates the given postfix expression using stack operations and displays the final result.
-### RESULT
-
